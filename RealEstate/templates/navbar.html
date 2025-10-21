@@ -1,0 +1,49 @@
+{% load static %}
+
+<div class="top-bar1">
+  <div class="right-section">
+    <span class="contact">Call Us: +355 69 123 4567</span>
+    <span class="divider">|</span>
+    <a href="https://www.instagram.com/"><i class="fab fa-instagram social-icon"></i></a>
+    <a href="https://www.tiktok.com/"><i class="fab fa-tiktok social-icon"></i></a>
+    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f social-icon"></i></a>
+  </div>
+</div>
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-gradient shadow-lg">
+    <div class="container-fluid">
+     <a class="navbar-brand fw-bold fs-4 text-uppercase d-flex align-items-center" href="{% url 'homePage' %}">
+     <img src="{% static 'image/realestatelogo.png' %}" alt="" class="logo me-2" />
+       </a>
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active px-3" aria-current="page" href="{% url 'homePage' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="{% url 'salesPage' %}">Sales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="{% url 'rentalPage' %}">Rental</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link px-3" href="{% url 'agentPage' %}">Agent</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="{% url 'contactPage' %}">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav

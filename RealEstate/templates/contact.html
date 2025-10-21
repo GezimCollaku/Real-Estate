@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+<h1>{{ property.title }}</h1>
+<p>{{ property.description }}</p>
+<p>Adresa: {{ property.address }}</p>
+<p>Çmimi: {{ property.price }}</p>
+
+<h2>Kontakto për këtë pronë</h2>
+<form method="post">
+    {% csrf_token %}
+    <label>Emri:</label>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" required><br><br>
+
+    <label>Mesazhi:</label>
+    <textarea name="message" required></textarea><br><br>
+
+    <button type="submit">Dërgo</button>
+</form>
+
+
+
+
+
+
+
+
+{% endblock %}

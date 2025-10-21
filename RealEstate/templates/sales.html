@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h2>Pronat për Shitje</h2>
+<div class="properties-container1" style="display:flex; flex-wrap:wrap; gap:20px;">
+  {% for property in properties %}
+    <div class="property-card1">
+      <div class="image-container1">
+        <img src="{{ property.image.url }}" alt="{{ property.title }}">
+        {% if property.is_rent %}
+          <div class="label1">Rent</div>
+        {% endif %}
+      </div>
+      <div class="property-info1">
+        <div class="property-id1">ID: {{ property.id }}</div>
+        <h3 class="property-title1">{{ property.title }}</h3>
+        <div class="location1">📍 {{ property.location }}</div>
+        <div class="details1">
+          <span>📐 {{ property.size }} m²</span>
+          <span>🛏️ {{ property.bedrooms }}</span>
+          <span>🏢 {{ property.type }}</span>
+        </div>
+        <div class="price1">€{{ property.price }}</div>
+      </div>
+    </div>
+  {% empty %}
+    <p>Nuk ka prona për shitje.</p>
+  {% endfor %}
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+

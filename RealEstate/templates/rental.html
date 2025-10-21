@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="properties-container">
+  {% for property in properties %}
+    <div class="property-card">
+      <div class="image-container">
+        <img src="{{ property.image.url }}" alt="{{ property.title }}">
+        {% if property.is_rent %}
+          <div class="label">Rent</div>
+        {% endif %}
+      </div>
+      <div class="property-info">
+        <div class="property-id">PREMIUM{{ property.id }}</div>
+        <h3 class="property-title">{{ property.title }}</h3>
+        <div class="location">📍 {{ property.location }}</div>
+        <div class="details">
+          <span>📐 {{ property.size }} m²</span>
+          <span>🛏️ {{ property.bedrooms }}</span>
+          <span>🏢 {{ property.type }}</span>
+        </div>
+        <div class="price">€{{ property.price }}</div>
+      </div>
+    </div>
+  {% empty %}
+    <p>Nuk ka prona.</p>
+  {% endfor %}
+</div>
+
+
+
+
+{% endblock %}

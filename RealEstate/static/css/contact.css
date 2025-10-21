@@ -1,0 +1,40 @@
+/* Vetëm për faqen e kontaktit/pronës */
+.contact-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    padding: 20px;
+}
+
+.contact-page h1,
+.contact-page h2 {
+    color: #333333;
+}
+
+.contact-page label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-page input,
+.contact-page textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-page button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-page button:hover {
+    background-color: #0056b3;
+}

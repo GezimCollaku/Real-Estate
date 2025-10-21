@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<!-- Hero Section -->
+<section class="hero position-relative">
+  
+
+  <img src="{% static 'image/background.jpg' %}" alt="Background" class="hero-bg">
+
+  <div class="overlay">
+    <div class="hero-content text-center text-white">
+      <h1>MIRËSEVINI NË SHTËPINË TUAJ TË RE</h1>
+      <p>Merrni Shtëpinë e Ëndrrave Tuaja Sot</p>
+    </div>
+
+    
+    <div class="search-box container">
+      <div class="row g-2 align-items-center">
+        <div class="col-md-3 col-sm-6">
+          <input type="text" class="form-control" placeholder="Apartamente">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <input type="text" class="form-control" placeholder="Vendodhja">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <input type="text" class="form-control" placeholder="Cmimi">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <button class="btn btn-warning w-100 fw-bold">KËRKO VETITË</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+
+
+<!--  -->
+<section class="key-points py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Pse të Zgjidhni Real Estate Albania</h2>
+    <div class="row">
+      <div class="col-md-4 point">
+        <div class="card p-4 text-center shadow-sm">
+          <i class="bi bi-award-fill icon mb-3"></i>
+          <h5>Eksperiencë dhe Profesionalizëm</h5>
+          <p>Ekipi ynë ka vite përvojë dhe ndihmon klientët të gjejnë pronën ideale pa stres.</p>
+        </div>
+      </div>
+      <div class="col-md-4 point">
+        <div class="card p-4 text-center shadow-sm">
+          <i class="bi bi-house-fill icon mb-3"></i>
+          <h5>Pronat më të Mira dhe të Verifikuara</h5>
+          <p>Ofrim vetëm të pronave të sigurta dhe të dokumentuara me kujdes të madh.</p>
+        </div>
+      </div>
+      <div class="col-md-4 point">
+        <div class="card p-4 text-center shadow-sm">
+          <i class="bi bi-people-fill icon mb-3"></i>
+          <h5>Shërbim Personalizuar dhe i Besueshëm</h5>
+          <p>Mbështetje individuale nga konsultimi deri në finalizimin e transaksionit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  -->
+
+<div class="container1">
+  <!-- Majtas -->
+  <div class="left-section">
+    <h1>Vendet ku operojmë</h1>
+    <h2>Qytetet</h2>
+    <div class="cities">
+      <div class="city">Tirana</div>
+      <div class="city">Durrës</div>
+      <div class="city">Kavajë</div>
+      <div class="city">Vlorë</div>
+      <div class="city">Elbasan</div>
+      <div class="city">Shkodër</div>
+    </div>
+   <div class="buttons">
+  <a href="{% url 'salesPage' %}" class="btn sales">Sales</a>
+  <a href="{% url 'rentalPage' %}" class="btn rental">Rental</a>
+</div>
+  </div>
+
+  <!-- Djathtas -->
+  <div class="right-section">
+    <img src="{% static 'image/harta.png' %}" alt="Harta e Shqipërisë" class="map-image">
+  </div>
+</div>
+
+
+<!--  -->
+
+<section class="stats-section">
+  <div class="stat-box">
+    <h2 class="number">5+</h2>
+    <hr>
+    <p class="label">Agents</p>
+  </div>
+  <div class="stat-box">
+    <h2 class="number gold">302+</h2>
+    <hr>
+    <p class="label">Listed Properties</p>
+  </div>
+  <div class="stat-box">
+    <h2 class="number">90+</h2>
+    <hr>
+    <p class="label">Successful Deals</p>
+  </div>
+  <div class="stat-box">
+    <h2 class="number gold">95%</h2>
+    <hr>
+    <p class="label">Positive<br>Feedbacks</p>
+  </div>
+</section>
+<!--  -->
+
+
+
+ <section class="city-slider">
+  <div class="slider-track">
+    <div class="city1">
+      <img src="{% static 'image/tirana.jpg' %}" alt="Tiranë">
+      <h2>Tiranë  +1201</h2>
+    </div>
+    <div class="city1">
+      <img src="{% static 'image/durres.jpg' %}" alt="Durrës">
+      <h2>Durrës +802</h2>
+    </div>
+    <div class="city1">
+      <img src="{%static 'image/kavaje.jpg' %}" alt="Kavajë">
+      <h2>Kavajë +1051</h2>
+    </div>
+    <div class="city1">
+      <img src="{% static 'image/vlore.jpg' %}" alt="Vlorë">
+      <h2>Vlorë +1104</h2>
+    </div>
+    <div class="city1">
+      <img src="{% static 'image/Elbasan.jpg' %}" alt="Elbasan">
+      <h2>Elbasan +531</h2>
+    </div>
+    <div class="city1">
+      <img src="{% static 'image/shkoder.jpg' %}" alt="Shkodër">
+      <h2>Shkodër +211</h2>
+    </div>
+  </div>
+</section>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!--  -->
+
+<section class="property-sell">
+  <div class="container">
+    <div class="left">
+      <img src="{% static 'image/vile.png' %}" alt="Property">
+    </div>
+    <div class="right">
+      <h2>A KENI NJE PRONE DHE DONI TA SHISNI ATE?</h2>
+      <ul class="steps">
+        <li><span>01</span> PARAQITNI PRONËN TUAJ</li>
+        <li><span>02</span> VLERËSIMI I PRONËS</li>
+        <li><span>03</span> MERR OFERTA</li>
+      </ul>
+      <a href="{% url 'contactPage' %}" class="buton">Na Kontaktoni →</a>
+    </div>
+  </div>
+</section>
+
+
+<!--  -->
+   
+ {% endblock %}  
